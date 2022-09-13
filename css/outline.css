@@ -3,7 +3,6 @@ body {
     color: white;
 }
 a:active,
-a:hover,
 a {
     text-decoration: none;
     color: #666;
