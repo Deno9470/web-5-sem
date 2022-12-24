@@ -1,80 +1,282 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="description" content="Лендинг"/>
-    <meta name="keywords" content="Студент, итмо, владимир">
-    <link rel="stylesheet" href="css/outline.css"/>
-    <title>Тайтл</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/outline.css" />
+    <script src="js/page-load.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Лэндинг</title>
 </head>
 <body>
-<header class="presentation">
-    <div class="logo"><img src="src/logo.svg"></div>
+<header class="hero">
     <div class="container">
-        <div class="presentation-content">
-            <div class="desc-block">
-                <span class="status">Студент</span>
-                <h1 class="name">
+        <div class="hero-header">
+            <img src="src/logo.svg" alt="Логотип" class="logo" />
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+            <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s"
+            >Студент</span
+            >
+                <h1 class="hero-title wow fadeInRight" data-wow-delay="0.4s">
                     Владимир Беликов
-                </h1 >
-                <p class="description">
-                    Учусь на 3 курсе, факультет ИС, Университет ИТМО
+                </h1>
+                <p class="hero-desc wow fadeInRight" data-wow-delay="0.6s">
+                    Университет ИТМО. 3 курс. ФИТИП. ИС.
                 </p>
-                <button><a href="#contact" style="text-transform:uppercase;" class="button-works">Мои проекты<  /a  >
+                <button
+                        class="button hero-button wow fadeInRight"
+                        data-wow-delay="0.8s"
+                >
+                    <a href="#contact" class="button-down">
+                        Связаться со мной</a
+                    >
                 </button>
             </div>
-            <div class="avatar"><img src="src/ava" /></div>
+            <div class="hero-avatar wow fadeIn" data-wow-delay="1.4s"></div>
         </div>
     </div>
 </header>
 <main>
-    <section class="projects">
-        <div class="project">Ш
-            <div class="project-photo">
-                <h2 class="recent-projects">Последние проекты</h2>
-                <img src="src\project-img.png" width="10%" alt="MVC-приложение Java Spring Boot" class="projects-image"/>
-            </div>
-            <div class="project-description">
-                <h3> MVC-приложение Java Spring Boot </h3>
-                <ul style="list-style-type: none;">
-                    <li><b>Сроки</b></li>
-                    <li>1 месяц</li>
-                </ul>
-                <ul style="list-style-type: none;">
-                    <li><b>Цена</b></li>
-                    <li>Бессоные ночи</li>
-                </ul>
+    <section class="features section">
+        <div class="container">
+            <h2 class="section-title">Со мной удобно работать</h2>
+            <div class="features-block">
+                <div class="features-item wow fadeInDown">
+                    <h3 class="features-title">По договору</h3>
+                    <p class="features-text">
+                        Предоставлю все документы для бухгалтерии: договоры, счета и
+                        акты. Работаю как ИП без НДС.
+                    </p>
+                </div>
+                <div class="features-item wow fadeInDown">
+                    <h3 class="features-title">Точно в срок</h3>
+                    <p class="features-text">
+                        В договоре прописана моя ответственность за срок проекта. Если
+                        просрочу — плачу неустойку.
+                    </p>
+                </div>
+                <div class="features-item wow fadeInDown">
+                    <h3 class="features-title">Ценник под вас</h3>
+                    <p class="features-text">
+                        Если у вас нетиповой проект, сделаю рассчет цены за работу и
+                        объясню, как складывается цена.
+                    </p>
+                </div>
+                <div class="features-item wow fadeInUp">
+                    <h3 class="features-title">Премежуточные итоги</h3>
+                    <p class="features-text">
+                        Показываю работу поэтапно, а не в последий момент перед крайним
+                        сроком.
+                    </p>
+                </div>
+                <div class="features-item wow fadeInUp">
+                    <h3 class="features-title">Хостинг и домен</h3>
+                    <p class="features-text">
+                        Если мы договорились о цене проекта, в неё входит всё: домен и
+                        хостинг на год + SSL сертификат.
+                    </p>
+                </div>
+                <div class="features-item wow fadeInUp">
+                    <h3 class="features-title">Не брошу после сдачи</h3>
+                    <p class="features-text">
+                        Научу вас или вашего сотрудника пользоваться сайтом, запишу
+                        видео-инструкции.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+    <div class="section projects">
+        <div class="container">
+            <h2 class="projects-title">Последние проекты</h2>
+            
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="projects-slide">
+                            <img
+                                    src="src/project-img.png"
+                                    alt="Сайт строительной фирмы “Велстрой”"
+                                    class="projects-image"
+                            />
+                            <div class="project-text">
+                                <h3 class="project-title">
+                                    Какая-то неизвестная компания
+                                </h3>
+                                <div class="project-time">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Сроки</h4>
+                                        <p class="project-paragraph">4 рабочих дня</p>
+                                    </div>
+                                </div>
+                                <div class="project-cost">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Стоимость</h4>
+                                        <p class="project-paragraph">14 000 рублей</p>
+                                    </div>
+                                </div>
+                                <div class="project-feedback">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Отзыв клиента</h4>
+                                        <p class="project-paragraph">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Atque ducimus ea illo optio pariatur quibusdam quisquam
+                                            quo sapiente sint sit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="projects-slide">
+                            <a href="https://ya.ru"></a>
+                            <div class="project-text">
+                                <h3 class="project-title">
+                                    Сайт какой-то компании
+                                </h3>
+                                <div class="project-time">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Сроки</h4>
+                                        <p class="project-paragraph">22 года</p>
+                                    </div>
+                                </div>
+                                <div class="project-cost">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Стоимость</h4>
+                                        <p class="project-paragraph">15 млрд. долларов</p>
+                                    </div>
+                                </div>
+                                <div class="project-feedback">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Отзыв клиента</h4>
+                                        <p class="project-paragraph">
+                                            Мне нравится эта компания. Она предоставляет большое
+                                            количество интрументов и возможностей. Крупный игрок
+                                            на рынке.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="projects-slide">
+                            <a href="https://cho.to.inc"></a>
+                            <div class="project-text">
+                                <h3 class="project-title">
+                                    Еще сайт какой-то компании
+                                </h3>
+                                <div class="project-time">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Сроки</h4>
+                                        <p class="project-paragraph">TBD</p>
+                                    </div>
+                                </div>
+                                <div class="project-cost">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Стоимость</h4>
+                                        <p class="project-paragraph">TBD</p>
+                                    </div>
+                                </div>
+                                <div class="project-feedback">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Отзыв клиента</h4>
+                                        <p class="project-paragraph">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Voluptate id assumenda animi! Maiores ipsam
+                                            quasi quia aliquid aliquam, voluptatem nisi fugiat
+                                            veniam tenetur soluta placeat ab deserunt deleniti
+                                            omnis voluptate ex! Quae aliquam dolore repellendus
+                                            est ea ab sunt ullam?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-pagination"></div>
+            </div>
+        </div>
+    </div>
 </main>
-<footer>
+<footer class="section">
     <div class="container">
-        <h2 class="contact-me">Связаться со мной</h2>
-        <div class="contact">
-            <form action="#" class="contacts-form">
-                <input type="text" class="input" placeholder="Имя"/>
-                <input type="text" class="input" placeholder="Сообщение"/>
-                <button type="submit">Отправить</button>
+        <h2 class="section-title">Свяжитесь со мной</h2>
+        <div class="contacts-block">
+            <form action="#" class="contacts-form" id="contact">
+                <h4 class="form-title">
+                    Можете просто оставить заявку, я свяжусь с вами
+                </h4>
+                <input
+                        type="text"
+                        class="input input-name"
+                        placeholder="Ваше имя"
+                />
+                <input
+                        type="text"
+                        class="input input-email"
+                        placeholder="Ваш e-mail"
+                />
+                <button class="button form-button">Связаться со мной</button>
             </form>
-            <div>
-                <div class="phone">
-                    <h4>Телефон</h4>
-                    <a href="tel:+78005553535">+7 800 555-35-35</a>
+            <div class="contacts-text">
+                <div class="contacts-data">
+                    <div class="contacts-phone">
+                        <h4 class="contacts title">Телефон</h4>
+                        <a href="tel:+79991234567" class="contacts-link"
+                        >+7 999 123-45-67</a
+                        >
+                    </div>
+                    <div class="contacts-mail">
+                        <h4 class="contacts title">Почта</h4>
+                        <a href="mailto:ivanov@mail.ru" class="contacts-link"
+                        >ivanov@mail.ru</a
+                        >
+                    </div>
+                    <div class="contacts-social">
+                        <h4 class="contacts title">Соцсети</h4>
+                        <a href="#" class="contacts-link">t.me/</a>
+                        <a href="#" class="contacts-link">vk.me/</a>
+                        <a href="#" class="contacts-link">fb.me/</a>
+                    </div>
                 </div>
-                <div class="mail">
-                    <h4 class="contacts title">Почта</h4>
-                    <a href="dzhava.ded@bk.ru">dzhava.ded@bk.ru</a>
+                <div class="social-links">
+                    <a href="https://github.com/" class="social-link" target="_blank"
+                    ><img src="" alt=""
+                    /></a>
+                    <a href="https://twitter.com/" class="social-link" target="_blank"
+                    ><img src="" alt=""
+                    /></a>
+                    <a
+                            href="https://www.instagram.com/"
+                            class="social-link"
+                            target="_blank"
+                    ><img src="" alt=""
+                    /></a>
+                    <a
+                            href="https://facebook.com/"
+                            class="social-link"
+                            target="_blank"
+                    ><img src="" alt=""
+                    /></a>
                 </div>
-                <h4 class="contacts title">Соцсети</h4>
-                <nav>
-                    <a href="#" class="contacts-link">t.me/</a> |
-                    <a href="#" class="contacts-link">vk.me/</a> |
-                    <a href="https://youtu.be/dQw4w9WgXcQ" class="contacts-link">youtu.be/</a>
-                </nav>
             </div>
         </div>
     </div>
 </footer>
+
+<div id="page_load_time"></div>
 </body>
 </html>
