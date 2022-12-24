@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Лендинг" />
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Лендинг"/>
     <meta name="keywords" content="Студент, итмо, владимир">
-    <link rel="stylesheet" href="css/outline.css" />
+    <link rel="stylesheet" href="css/outline.css"/>
     <title>Тайтл</title>
 </head>
 <body>
@@ -12,43 +12,49 @@
     <div class="logo"><img src="src/logo.svg"></div>
     <div class="container">
         <div class="presentation-content">
-            <span>Студент</span
-            >
+            <div class="desc-block">
+                <span class="status">Студент</span>
                 <h1 class="name">
                     Владимир Беликов
-                </h1>
-                <p>
+                </h1 >
+                <p class="description">
                     Учусь на 3 курсе, факультет ИС, Университет ИТМО
                 </p>
-                <button> <a href="#" style="text-transform:uppercase;" class="button-works">Мои проекты</a> </button>
-            <div class="avatar"><img src="src"></div>
+                <button><a href="#contact" style="text-transform:uppercase;" class="button-works">Мои проекты<  /a  >
+                </button>
+            </div>
+            <div class="avatar"><img src="src/ava" /></div>
         </div>
     </div>
 </header>
 <main>
-    <section>
-        <div>
-                <h2 class="projects">Последние проекты</h2>
+    <section class="projects">
+        <div class="project">Ш
+            <div class="project-photo">
+                <h2 class="recent-projects">Последние проекты</h2>
                 <img src="src\project-img.png" width="10%" alt="MVC-приложение Java Spring Boot" class="projects-image"/>
+            </div>
+            <div class="project-description">
                 <h3> MVC-приложение Java Spring Boot </h3>
-                <ul>
-                    <li>Сроки</li>
+                <ul style="list-style-type: none;">
+                    <li><b>Сроки</b></li>
                     <li>1 месяц</li>
                 </ul>
-            <ul>
-                <li>Цена</li>
-                <li>Бессоные ночи</li>
-            </ul>
+                <ul style="list-style-type: none;">
+                    <li><b>Цена</b></li>
+                    <li>Бессоные ночи</li>
+                </ul>
+            </div>
         </div>
     </section>
 </main>
 <footer>
     <div class="container">
-        <h2>Связаться со мной</h2>
+        <h2 class="contact-me">Связаться со мной</h2>
         <div class="contact">
             <form action="#" class="contacts-form">
-                <input type="text" placeholder="Имя"/>
-                <input type="text" class="message" placeholder="Сообщение"/>
+                <input type="text" class="input" placeholder="Имя"/>
+                <input type="text" class="input" placeholder="Сообщение"/>
                 <button type="submit">Отправить</button>
             </form>
             <div>
@@ -67,6 +73,12 @@
                         <a href="https://youtu.be/dQw4w9WgXcQ" class="contacts-link">youtu.be/</a>
                     </nav>
                 </div>
+                <h4 class="contacts title">Соцсети</h4>
+                <nav>
+                    <a href="#" class="contacts-link">t.me/</a> |
+                    <a href="#" class="contacts-link">vk.me/</a> |
+                    <a href="https://youtu.be/dQw4w9WgXcQ" class="contacts-link">youtu.be/</a>
+                </nav>
             </div>
         </div>
 </footer>
