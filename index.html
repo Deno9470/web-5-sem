@@ -10,128 +10,129 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/outline.css" />
-    <script src="js/page-load.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+
+
     <title>Лэндинг</title>
 </head>
 <body>
-<header class="hero">
+<header>
     <div class="container">
-        <div class="hero-header">
-            <img src="src/logo.svg" alt="Логотип" class="logo" />
-        </div>
+    <div class="hero-header">
+        <img src="src/logo.svg" alt="Логотип" class="logo" />
+        <nav>
+            <a href="#hero" class="nav"> Интро </a>|
+            <a href="#features" class="nav"> Обо мне </a>|
+            <a href="#projects" class="nav"> Последние работы </a>|
+            <a href="#contact" class="nav"> Контакты </a>|
+            <a href="ttable.html#ttable" class="nav"> Расписание </a>
+        </nav>
+    </div>
+    </div>
+</header>
+<section class="header hero section" id="hero" >
+    <div class="container">
         <div class="hero-content">
             <div class="hero-text">
-            <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s"
-            >Студент</span
-            >
+                <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s">
+                    Студент
+                </span>
                 <h1 class="hero-title wow fadeInRight" data-wow-delay="0.4s">
                     Владимир Беликов
                 </h1>
                 <p class="hero-desc wow fadeInRight" data-wow-delay="0.6s">
                     Университет ИТМО. 3 курс. ФИТИП. ИС.
                 </p>
-                <button
+                <a href="#contact" class="button-down">
+                    <button
                         class="button hero-button wow fadeInRight"
-                        data-wow-delay="0.8s"
-                >
-                    <a href="#contact" class="button-down">
-                        Связаться со мной</a
-                    >
-                </button>
+                        data-wow-delay="0.8s">
+                    Связаться со мной
+                </button></a>
             </div>
-            <div class="hero-avatar wow fadeIn" data-wow-delay="1.4s"></div>
+            <div class="hero-avatar wow fadeIn" data-wow-delay="1.4s">
+            </div>
         </div>
     </div>
-</header>
+
+</section>
 <main>
-    <section class="features section">
+    <section class="features section" id="features" >
         <div class="container">
-            <h2 class="section-title">Со мной удобно работать</h2>
+            <h2 class="section-title">Приятный молодой человек</h2>
             <div class="features-block">
                 <div class="features-item wow fadeInDown">
-                    <h3 class="features-title">По договору</h3>
+                    <h3 class="features-title">Frontend - не предел</h3>
                     <p class="features-text">
-                        Предоставлю все документы для бухгалтерии: договоры, счета и
-                        акты. Работаю как ИП без НДС.
+                        C/C++, C#, Java, Python. Быстро обучаюсь, много умею.
                     </p>
                 </div>
                 <div class="features-item wow fadeInDown">
-                    <h3 class="features-title">Точно в срок</h3>
+                    <h3 class="features-title">БД - святой грааль</h3>
                     <p class="features-text">
-                        В договоре прописана моя ответственность за срок проекта. Если
-                        просрочу — плачу неустойку.
+                        База данных для приложения, как водка для русского. Без нее никуда.
                     </p>
                 </div>
                 <div class="features-item wow fadeInDown">
-                    <h3 class="features-title">Ценник под вас</h3>
+                    <h3 class="features-title">DevOps - приятное дополнение</h3>
                     <p class="features-text">
-                        Если у вас нетиповой проект, сделаю рассчет цены за работу и
-                        объясню, как складывается цена.
+                        Умение развернуть что угодно где угодно отлично подчеркивает компетентность разработчика.
                     </p>
                 </div>
                 <div class="features-item wow fadeInUp">
-                    <h3 class="features-title">Премежуточные итоги</h3>
+                    <h3 class="features-title">Игры - новое исскуство</h3>
                     <p class="features-text">
-                        Показываю работу поэтапно, а не в последий момент перед крайним
-                        сроком.
+                        Elden Ring - худшая работа id. Deathloop - неимерссивный проходняк. Change my mind.
                     </p>
                 </div>
                 <div class="features-item wow fadeInUp">
-                    <h3 class="features-title">Хостинг и домен</h3>
+                    <h3 class="features-title">Музыка - пища богов</h3>
                     <p class="features-text">
-                        Если мы договорились о цене проекта, в неё входит всё: домен и
-                        хостинг на год + SSL сертификат.
+                        Мои вкусы слегка специфичны, но многим нравится.
                     </p>
                 </div>
                 <div class="features-item wow fadeInUp">
-                    <h3 class="features-title">Не брошу после сдачи</h3>
+                    <h3 class="features-title">Полемика - наше все</h3>
                     <p class="features-text">
-                        Научу вас или вашего сотрудника пользоваться сайтом, запишу
-                        видео-инструкции.
+                        С интересным человеком можно и поспорить, и  поддержу разговор на любую тему.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <div class="section projects">
+    <div class="section projects" id="projects">
         <div class="container">
             <h2 class="projects-title">Последние проекты</h2>
-            
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="projects-slide">
                             <img
                                     src="src/project-img.png"
-                                    alt="Сайт строительной фирмы “Велстрой”"
+                                    alt="MVC-Java”"
                                     class="projects-image"
                             />
                             <div class="project-text">
                                 <h3 class="project-title">
-                                    Какая-то неизвестная компания
+                                    MVC Java Spring система по контролю домашних животных
                                 </h3>
                                 <div class="project-time">
                                     <div class="project-description">
                                         <h4 class="project-subtitle">Сроки</h4>
-                                        <p class="project-paragraph">4 рабочих дня</p>
+                                        <p class="project-paragraph">7 дней</p>
                                     </div>
                                 </div>
-                                <div class="project-cost">
+                                <div class="project-stack">
                                     <div class="project-description">
-                                        <h4 class="project-subtitle">Стоимость</h4>
-                                        <p class="project-paragraph">14 000 рублей</p>
+                                        <h4 class="project-subtitle">Технологии</h4>
+                                        <p class="project-paragraph">Spring Boot, Hibernate, Postgres</p>
                                     </div>
                                 </div>
                                 <div class="project-feedback">
                                     <div class="project-description">
-                                        <h4 class="project-subtitle">Отзыв клиента</h4>
+                                        <h4 class="project-subtitle">Комментарии</h4>
                                         <p class="project-paragraph">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Atque ducimus ea illo optio pariatur quibusdam quisquam
-                                            quo sapiente sint sit.
+                                            Легкое в поддержке маштабируемое. Поддерживает добавление нововых типов животныъ,
+                                            новых атрибутов, разделения списка пользователей на подгруппы.
                                         </p>
                                     </div>
                                 </div>
@@ -140,30 +141,33 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="projects-slide">
-                            <a href="https://ya.ru"></a>
+                            <img
+                                    src="src/project-img2.png"
+                                    alt="3D Rubic”"
+                                    class="projects-image"
+                            />
                             <div class="project-text">
                                 <h3 class="project-title">
-                                    Сайт какой-то компании
+                                    3D кубик Рубика
                                 </h3>
                                 <div class="project-time">
                                     <div class="project-description">
                                         <h4 class="project-subtitle">Сроки</h4>
-                                        <p class="project-paragraph">22 года</p>
+                                        <p class="project-paragraph">1 Месяц</p>
                                     </div>
                                 </div>
-                                <div class="project-cost">
+                                <div class="project-stack">
                                     <div class="project-description">
-                                        <h4 class="project-subtitle">Стоимость</h4>
-                                        <p class="project-paragraph">15 млрд. долларов</p>
+                                        <h4 class="project-subtitle">Технологии</h4>
+                                        <p class="project-paragraph">C++, OpenGL</p>
                                     </div>
                                 </div>
                                 <div class="project-feedback">
                                     <div class="project-description">
-                                        <h4 class="project-subtitle">Отзыв клиента</h4>
+                                        <h4 class="project-subtitle">Комментарии</h4>
                                         <p class="project-paragraph">
-                                            Мне нравится эта компания. Она предоставляет большое
-                                            количество интрументов и возможностей. Крупный игрок
-                                            на рынке.
+                                            Приложение-симулятор кубика Рубика с
+                                            возможностью просчитывать решение и визуализировать его.
                                         </p>
                                     </div>
                                 </div>
@@ -172,33 +176,34 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="projects-slide">
-                            <a href="https://cho.to.inc"></a>
+                            <img
+                                    src="src/project-img3.png"
+                                    alt="bot”"
+                                    class="projects-image"
+                            />
                             <div class="project-text">
                                 <h3 class="project-title">
-                                    Еще сайт какой-то компании
+                                    Python Telegram bot
                                 </h3>
                                 <div class="project-time">
                                     <div class="project-description">
                                         <h4 class="project-subtitle">Сроки</h4>
-                                        <p class="project-paragraph">TBD</p>
+                                        <p class="project-paragraph">1 неделя</p>
                                     </div>
                                 </div>
-                                <div class="project-cost">
+                                <div class="project-stack">
                                     <div class="project-description">
-                                        <h4 class="project-subtitle">Стоимость</h4>
-                                        <p class="project-paragraph">TBD</p>
+                                        <h4 class="project-subtitle">Технологии</h4>
+                                        <p class="project-paragraph">Python, AIOgram, PostreSQL</p>
                                     </div>
                                 </div>
                                 <div class="project-feedback">
                                     <div class="project-description">
-                                        <h4 class="project-subtitle">Отзыв клиента</h4>
+                                        <h4 class="project-subtitle">Комментарии</h4>
                                         <p class="project-paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit. Voluptate id assumenda animi! Maiores ipsam
-                                            quasi quia aliquid aliquam, voluptatem nisi fugiat
-                                            veniam tenetur soluta placeat ab deserunt deleniti
-                                            omnis voluptate ex! Quae aliquam dolore repellendus
-                                            est ea ab sunt ullam?
+                                            Телеграм бот для решения задач по курсу. Умеет обрабатывать ошибки ввода и
+                                            вычисления. При возникновении неординарной ситуации или ошибки сразу пишет модератору.
+                                            Имеет систему логов и может полностью их выгрузить.
                                         </p>
                                     </div>
                                 </div>
@@ -211,13 +216,13 @@
         </div>
     </div>
 </main>
-<footer class="section">
+<section class="section footer" id="contact">
     <div class="container">
-        <h2 class="section-title">Свяжитесь со мной</h2>
+        <h2 class="section-title">Предподвалье</h2>
         <div class="contacts-block">
-            <form action="#" class="contacts-form" id="contact">
+            <form action="#" class="contacts-form" >
                 <h4 class="form-title">
-                    Можете просто оставить заявку, я свяжусь с вами
+                    Остались вопросы, хочется фактов?
                 </h4>
                 <input
                         type="text"
@@ -229,54 +234,43 @@
                         class="input input-email"
                         placeholder="Ваш e-mail"
                 />
+                <input
+                        type="text"
+                        class="input input-question"
+                        placeholder="Ваш вопрос"
+                />
                 <button class="button form-button">Связаться со мной</button>
             </form>
             <div class="contacts-text">
                 <div class="contacts-data">
                     <div class="contacts-phone">
                         <h4 class="contacts title">Телефон</h4>
-                        <a href="tel:+79991234567" class="contacts-link"
+                        <a href="tel:88005553535" class="contacts-link"
                         >+7 999 123-45-67</a
                         >
                     </div>
                     <div class="contacts-mail">
                         <h4 class="contacts title">Почта</h4>
-                        <a href="mailto:ivanov@mail.ru" class="contacts-link"
-                        >ivanov@mail.ru</a
+                        <a href="mailto:Deno9470@mail.ru" class="contacts-link"
+                        >Deno9470@mail.ru</a
                         >
                     </div>
                     <div class="contacts-social">
                         <h4 class="contacts title">Соцсети</h4>
-                        <a href="#" class="contacts-link">t.me/</a>
+                        <a href="https://t.me/Deno9470" class="contacts-link">t.me/Deno9470</a>
                         <a href="#" class="contacts-link">vk.me/</a>
                         <a href="#" class="contacts-link">fb.me/</a>
                     </div>
                 </div>
-                <div class="social-links">
-                    <a href="https://github.com/" class="social-link" target="_blank"
-                    ><img src="" alt=""
-                    /></a>
-                    <a href="https://twitter.com/" class="social-link" target="_blank"
-                    ><img src="" alt=""
-                    /></a>
-                    <a
-                            href="https://www.instagram.com/"
-                            class="social-link"
-                            target="_blank"
-                    ><img src="" alt=""
-                    /></a>
-                    <a
-                            href="https://facebook.com/"
-                            class="social-link"
-                            target="_blank"
-                    ><img src="" alt=""
-                    /></a>
-                </div>
             </div>
         </div>
     </div>
-</footer>
-
+</section>
+<script src="js/page-load.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/active-nav.js"></script>
+<script src="js/main.js"></script>
 <div id="page_load_time"></div>
 </body>
 </html>

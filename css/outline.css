@@ -2,14 +2,50 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+a:active,
+a:hover,
+a {
+    text-decoration: none;
+    color:#0075B2;
+}
+
 img {
     max-width: 100%;
 }
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #20202d;
     margin: 0;
     color: #ffffff;
+}
+
+
+nav {
+    background: #020f35;
+    color: white;
+    font-size: 20px;
+    position: sticky;
+    z-index: 0;
+    top: 0;
+}
+
+.active{
+    background: white;
+    color: black;
+    border: 1px solid white;
+}
+
+header {
+    position: sticky;
+    z-index: 32;
+    top: 0;
+    padding: 10px 0 5px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
 }
 
 .container {
@@ -18,15 +54,15 @@ body {
     margin: auto;
 }
 .section-title {
-    margin: 0 0 84px;
+    margin: 0 0 50px;
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
 }
 .section {
-    padding-top: 64px;
-    padding-bottom: 92px;
+    padding: 64px 0 110px;
     background-color: #000000;
+    scroll-margin-top: 50px;
 }
 .hero {
     padding-top: 50px;
@@ -37,7 +73,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 105px;
 }
 .social-link {
     margin-left: 20px;
@@ -82,19 +117,26 @@ body {
     text-transform: uppercase;
     color: #2e2e30;
     max-width: 100%;
+    cursor: pointer;
 }
 .hero-avatar {
     width: 389px;
     height: 389px;
     background-color: #fff;
-    background-image: url("../src/avatar.jpg");
-    background-position: center top -40px;
+    background-image: url("../src/avatar.png");
+    background-position: center top 20px;
     border-radius: 50%;
     border: 13px solid #fff;
+    background-size: contain;
 }
 .button-down {
     text-decoration: none;
     color: #2e2e30;
+}
+.button:hover {
+    background: linear-gradient(180deg, #ffbb01 0%, #b68500 100%);
+    box-shadow: 0 4px 0 #886500;
+
 }
 .projects {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
@@ -120,12 +162,12 @@ body {
     width: 338px;
     height: 268px;
 }
-.project-cost,
+.project-stack,
 .project-time {
     flex-basis: 50%;
     margin-bottom: 44px;
 }
-.project-cost,
+.project-stack,
 .project-time,
 .project-feedback {
     display: flex;
@@ -192,8 +234,10 @@ body {
     line-height: 28px;
     margin: 0;
 }
-footer.section {
+.footer {
+    padding: 64px 0 200px;
     background-color: #20202d;
+
 }
 
 .contacts-form {
@@ -227,7 +271,10 @@ footer.section {
     margin-bottom: 17px;
 }
 .input-email {
-    margin-bottom: 26px;
+    margin-bottom: 17px;
+}
+.input-question {
+    margin-bottom: 17px;
 }
 .form-button {
     width: 100%;
@@ -277,6 +324,39 @@ footer.section {
     color: #a5a5a5;
     margin-top: 72px;
 }
+
+.header-ttable {
+    max-width: 100%;
+}
+
+table{
+    display: grid;
+    color: black;
+}
+
+th{
+    background: #cc522e;
+}
+
+td{
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+tr:nth-child(odd) td{
+    background:#dfaf0f
+}
+
+tr:nth-child(even) td{
+    background:#f7cc3b
+}
+.teacher-name {
+    margin-top: 0;
+    vertical-align: sub;
+    font-size: smaller;
+}
+
 @media (max-width: 1100px) {
     .hero-avatar {
         width: 300px;
@@ -293,6 +373,10 @@ footer.section {
     }
 }
 @media (max-width: 900px) {
+    nav {
+        max-width: 254px;
+        background-color: transparent;
+    }
     .hero-content {
         flex-direction: column;
     }
@@ -325,6 +409,20 @@ footer.section {
     }
 }
 @media (max-width: 564px) {
+    .logo {
+        display: none;
+    }
+    .section {
+        scroll-margin-top: 300px;
+    }
+
+    nav {
+        max-width: 165px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .hero {
         padding-bottom: 75px;
     }
@@ -355,9 +453,7 @@ footer.section {
         background-size: 100%;
         background-position: center top;
     }
-    .section {
-        padding: 60px 0;
-    }
+
     .section-title {
         font-size: 19px;
         line-height: 22px;
@@ -380,7 +476,7 @@ footer.section {
         line-height: 150%;
     }
     .project-time,
-    .project-cost,
+    .project-stack,
     .project-feedback {
         flex-basis: 100%;
         margin-bottom: 33px;
