@@ -1,86 +1,276 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="description" content="Лендинг"/>
-    <meta name="keywords" content="Студент, итмо, владимир">
-    <link rel="stylesheet" href="css/outline.css"/>
-    <title>Тайтл</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/outline.css" />
+
+
+    <title>Лэндинг</title>
 </head>
 <body>
-<header class="presentation">
-    <div class="logo"><img src="src/logo.svg"></div>
+<header>
     <div class="container">
-        <div class="presentation-content">
-            <div class="desc-block">
-                <span class="status">Студент</span>
-                <h1 class="name">
-                    Владимир Беликов
-                </h1 >
-                <p class="description">
-                    Учусь на 3 курсе, факультет ИС, Университет ИТМО
-                </p>
-                <button><a href="#contact" style="text-transform:uppercase;" class="button-works">Мои проекты<  /a  >
-                </button>
-            </div>
-            <div class="avatar"><img src="src/ava" /></div>
-        </div>
+    <div class="hero-header">
+        <img src="src/logo.svg" alt="Логотип" class="logo" />
+        <nav>
+            <a href="#hero" class="nav"> Интро </a>|
+            <a href="#features" class="nav"> Обо мне </a>|
+            <a href="#projects" class="nav"> Последние работы </a>|
+            <a href="#contact" class="nav"> Контакты </a>|
+            <a href="ttable.html#ttable" class="nav"> Расписание </a>
+        </nav>
+    </div>
     </div>
 </header>
-<main>
-    <section class="projects">
-        <div class="project">Ш
-            <div class="project-photo">
-                <h2 class="recent-projects">Последние проекты</h2>
-                <img src="src\project-img.png" width="10%" alt="MVC-приложение Java Spring Boot" class="projects-image"/>
+<section class="header hero section" id="hero" >
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-subtitle wow fadeInRight" data-wow-delay="0.2s">
+                    Студент
+                </span>
+                <h1 class="hero-title wow fadeInRight" data-wow-delay="0.4s">
+                    Владимир Беликов
+                </h1>
+                <p class="hero-desc wow fadeInRight" data-wow-delay="0.6s">
+                    Университет ИТМО. 3 курс. ФИТИП. ИС.
+                </p>
+                <a href="#contact" class="button-down">
+                    <button
+                        class="button hero-button wow fadeInRight"
+                        data-wow-delay="0.8s">
+                    Связаться со мной
+                </button></a>
             </div>
-            <div class="project-description">
-                <h3> MVC-приложение Java Spring Boot </h3>
-                <ul style="list-style-type: none;">
-                    <li><b>Сроки</b></li>
-                    <li>1 месяц</li>
-                </ul>
-                <ul style="list-style-type: none;">
-                    <li><b>Цена</b></li>
-                    <li>Бессоные ночи</li>
-                </ul>
+            <div class="hero-avatar wow fadeIn" data-wow-delay="1.4s">
+            </div>
+        </div>
+    </div>
+
+</section>
+<main>
+    <section class="features section" id="features" >
+        <div class="container">
+            <h2 class="section-title">Приятный молодой человек</h2>
+            <div class="features-block">
+                <div class="features-item wow fadeInDown">
+                    <h3 class="features-title">Frontend - не предел</h3>
+                    <p class="features-text">
+                        C/C++, C#, Java, Python. Быстро обучаюсь, много умею.
+                    </p>
+                </div>
+                <div class="features-item wow fadeInDown">
+                    <h3 class="features-title">БД - святой грааль</h3>
+                    <p class="features-text">
+                        База данных для приложения, как водка для русского. Без нее никуда.
+                    </p>
+                </div>
+                <div class="features-item wow fadeInDown">
+                    <h3 class="features-title">DevOps - приятное дополнение</h3>
+                    <p class="features-text">
+                        Умение развернуть что угодно где угодно отлично подчеркивает компетентность разработчика.
+                    </p>
+                </div>
+                <div class="features-item wow fadeInUp">
+                    <h3 class="features-title">Игры - новое исскуство</h3>
+                    <p class="features-text">
+                        Elden Ring - худшая работа id. Deathloop - неимерссивный проходняк. Change my mind.
+                    </p>
+                </div>
+                <div class="features-item wow fadeInUp">
+                    <h3 class="features-title">Музыка - пища богов</h3>
+                    <p class="features-text">
+                        Мои вкусы слегка специфичны, но многим нравится.
+                    </p>
+                </div>
+                <div class="features-item wow fadeInUp">
+                    <h3 class="features-title">Полемика - наше все</h3>
+                    <p class="features-text">
+                        С интересным человеком можно и поспорить, и  поддержу разговор на любую тему.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-</main>
-<footer>
-    <div class="container">
-        <h2 class="contact-me">Связаться со мной</h2>
-        <div class="contact">
-            <form action="#" class="contacts-form">
-                <input type="text" class="input" placeholder="Имя"/>
-                <input type="text" class="input" placeholder="Сообщение"/>
-                <button type="submit">Отправить</button>
-            </form>
-            <div>
-                    <div class="phone">
-                        <h4>Телефон</h4>
-                        <a href="tel:+78005553535">+7 800 555-35-35</a>
+    <div class="section projects" id="projects">
+        <div class="container">
+            <h2 class="projects-title">Последние проекты</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="projects-slide">
+                            <img
+                                    src="src/project-img.png"
+                                    alt="MVC-Java”"
+                                    class="projects-image"
+                            />
+                            <div class="project-text">
+                                <h3 class="project-title">
+                                    MVC Java Spring система по контролю домашних животных
+                                </h3>
+                                <div class="project-time">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Сроки</h4>
+                                        <p class="project-paragraph">7 дней</p>
+                                    </div>
+                                </div>
+                                <div class="project-stack">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Технологии</h4>
+                                        <p class="project-paragraph">Spring Boot, Hibernate, Postgres</p>
+                                    </div>
+                                </div>
+                                <div class="project-feedback">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Комментарии</h4>
+                                        <p class="project-paragraph">
+                                            Легкое в поддержке маштабируемое. Поддерживает добавление нововых типов животныъ,
+                                            новых атрибутов, разделения списка пользователей на подгруппы.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mail">
-                        <h4 class="contacts title">Почта</h4>
-                        <a href="mailto:dzhava.ded@bk.ru">dzhava.ded@bk.ru</a>
+                    <div class="swiper-slide">
+                        <div class="projects-slide">
+                            <img
+                                    src="src/project-img2.png"
+                                    alt="3D Rubic”"
+                                    class="projects-image"
+                            />
+                            <div class="project-text">
+                                <h3 class="project-title">
+                                    3D кубик Рубика
+                                </h3>
+                                <div class="project-time">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Сроки</h4>
+                                        <p class="project-paragraph">1 Месяц</p>
+                                    </div>
+                                </div>
+                                <div class="project-stack">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Технологии</h4>
+                                        <p class="project-paragraph">C++, OpenGL</p>
+                                    </div>
+                                </div>
+                                <div class="project-feedback">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Комментарии</h4>
+                                        <p class="project-paragraph">
+                                            Приложение-симулятор кубика Рубика с
+                                            возможностью просчитывать решение и визуализировать его.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="contacts title">Соцсети</h4>
-                    <nav>
-                        <a href="#" class="contacts-link">t.me/</a> |
-                        <a href="#" class="contacts-link">vk.me/</a> |
-                        <a href="https://youtu.be/dQw4w9WgXcQ" class="contacts-link">youtu.be/</a>
-                    </nav>
+                    <div class="swiper-slide">
+                        <div class="projects-slide">
+                            <img
+                                    src="src/project-img3.png"
+                                    alt="bot”"
+                                    class="projects-image"
+                            />
+                            <div class="project-text">
+                                <h3 class="project-title">
+                                    Python Telegram bot
+                                </h3>
+                                <div class="project-time">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Сроки</h4>
+                                        <p class="project-paragraph">1 неделя</p>
+                                    </div>
+                                </div>
+                                <div class="project-stack">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Технологии</h4>
+                                        <p class="project-paragraph">Python, AIOgram, PostreSQL</p>
+                                    </div>
+                                </div>
+                                <div class="project-feedback">
+                                    <div class="project-description">
+                                        <h4 class="project-subtitle">Комментарии</h4>
+                                        <p class="project-paragraph">
+                                            Телеграм бот для решения задач по курсу. Умеет обрабатывать ошибки ввода и
+                                            вычисления. При возникновении неординарной ситуации или ошибки сразу пишет модератору.
+                                            Имеет систему логов и может полностью их выгрузить.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h4 class="contacts title">Соцсети</h4>
-                <nav>
-                    <a href="#" class="contacts-link">t.me/</a> |
-                    <a href="#" class="contacts-link">vk.me/</a> |
-                    <a href="https://youtu.be/dQw4w9WgXcQ" class="contacts-link">youtu.be/</a>
-                </nav>
+                <div class="projects-pagination"></div>
             </div>
         </div>
-</footer>
+    </div>
+</main>
+<section class="section footer" id="contact">
+    <div class="container">
+        <h2 class="section-title">Предподвалье</h2>
+        <div class="contacts-block">
+            <form action="#" class="contacts-form" >
+                <h4 class="form-title">
+                    Остались вопросы, хочется фактов?
+                </h4>
+                <input
+                        type="text"
+                        class="input input-name"
+                        placeholder="Ваше имя"
+                />
+                <input
+                        type="text"
+                        class="input input-email"
+                        placeholder="Ваш e-mail"
+                />
+                <input
+                        type="text"
+                        class="input input-question"
+                        placeholder="Ваш вопрос"
+                />
+                <button class="button form-button">Связаться со мной</button>
+            </form>
+            <div class="contacts-text">
+                <div class="contacts-data">
+                    <div class="contacts-phone">
+                        <h4 class="contacts title">Телефон</h4>
+                        <a href="tel:88005553535" class="contacts-link"
+                        >+7 999 123-45-67</a
+                        >
+                    </div>
+                    <div class="contacts-mail">
+                        <h4 class="contacts title">Почта</h4>
+                        <a href="mailto:Deno9470@mail.ru" class="contacts-link"
+                        >Deno9470@mail.ru</a
+                        >
+                    </div>
+                    <div class="contacts-social">
+                        <h4 class="contacts title">Соцсети</h4>
+                        <a href="https://t.me/Deno9470" class="contacts-link">t.me/Deno9470</a>
+                        <a href="#" class="contacts-link">vk.me/</a>
+                        <a href="#" class="contacts-link">fb.me/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/page-load.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/active-nav.js"></script>
+<script src="js/main.js"></script>
+<div id="page_load_time"></div>
 </body>
 </html>
