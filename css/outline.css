@@ -6,6 +6,7 @@
 a:active,
 a:hover,
 a {
+    border-radius: 5px;
     text-decoration: none;
     color:#0075B2;
 }
@@ -354,164 +355,193 @@ tr:nth-child(even) td{
 .teacher-name {
     margin-top: 0;
     vertical-align: sub;
-    font-size: smaller;
+    font-size: 13px;
 }
+input.teacher-name {
+    border-radius: 10px;
+    max-width: 70%;
+    text-align: center;
+    background-color: #ffc400;
+}
+
+.input-class {
+    border-radius: 10px;
+    font-size: 16px;
+    max-width: 90%;
+    text-align: center;
+    background-color: #fbcb2c;
+}
+
+
+.inactive {
+    display: none;
+}
+.disabled {
+    background-color: transparent !important;
+    color: #000;
+    border-width: 0;
+    box-sizing: border-box;
+    /*max-width: 50px;*/
+    text-align: center;
+
+}
+
 
 @media (max-width: 1100px) {
-    .hero-avatar {
-        width: 300px;
-        height: 300px;
-        border-width: 10px;
-    }
+.hero-avatar {
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+}
 }
 @media (max-width: 1000px) {
-    .projects-slide {
-        flex-direction: column;
-    }
-    .projects-image {
-        margin-bottom: 46px;
-    }
+.projects-slide {
+    flex-direction: column;
+}
+.projects-image {
+    margin-bottom: 46px;
+}
 }
 @media (max-width: 900px) {
-    nav {
-        max-width: 254px;
-        background-color: transparent;
-    }
-    .hero-content {
-        flex-direction: column;
-    }
-    .hero-avatar {
-        order: 0;
-        width: 300px;
-        height: 300px;
-        border-width: 10px;
-        margin-bottom: 17px;
-    }
-    .hero-text {
-        order: 1;
-        text-align: center;
-    }
-    .features-item {
-        flex-basis: 45%;
-    }
-    .projects-image {
-        margin-bottom: 46px;
-    }
-    .projects-slide {
-        flex-direction: column;
-    }
-    .contacts-block {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-    .contacts-form {
-        margin-bottom: 50px;
-    }
+nav {
+    max-width: 254px;
+    background-color: transparent;
+}
+.hero-content {
+    flex-direction: column;
+}
+.hero-avatar {
+    order: 0;
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+    margin-bottom: 17px;
+}
+.hero-text {
+    order: 1;
+    text-align: center;
+}
+.features-item {
+    flex-basis: 45%;
+}
+.projects-image {
+    margin-bottom: 46px;
+}
+.projects-slide {
+    flex-direction: column;
+}
+.contacts-block {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.contacts-form {
+    margin-bottom: 50px;
+}
 }
 @media (max-width: 564px) {
-    .logo {
-        display: none;
-    }
-    .section {
-        scroll-margin-top: 300px;
-    }
+.logo {
+    display: none;
+}
+.section {
+    scroll-margin-top: 300px;
+}
 
-    nav {
-        max-width: 165px;
-        text-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .hero {
-        padding-bottom: 75px;
-    }
-    .hero-header {
-        margin-bottom: 38px;
-    }
-    .social-link {
-        margin-left: 5px;
-    }
-    .hero-subtitle {
-        font-size: 16px;
-        line-height: 27px;
-        margin-bottom: 4px;
-    }
-    .hero-title {
-        font-size: 24px;
-        line-height: 28px;
-    }
-    .hero-desc {
-        font-size: 14px;
-        line-height: 140%;
-    }
-    .hero-avatar {
-        width: 113px;
-        height: 113px;
-        border-width: 4px;
-        margin-bottom: 17px;
-        background-size: 100%;
-        background-position: center top;
-    }
+nav {
+    max-width: 165px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero {
+    padding-bottom: 75px;
+}
+.hero-header {
+    margin-bottom: 38px;
+}
+.social-link {
+    margin-left: 5px;
+}
+.hero-subtitle {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 4px;
+}
+.hero-title {
+    font-size: 24px;
+    line-height: 28px;
+}
+.hero-desc {
+    font-size: 14px;
+    line-height: 140%;
+}
+.hero-avatar {
+    width: 113px;
+    height: 113px;
+    border-width: 4px;
+    margin-bottom: 17px;
+    background-size: 100%;
+    background-position: center top;
+}
 
-    .section-title {
-        font-size: 19px;
-        line-height: 22px;
-        margin-bottom: 60px;
-    }
-    .features-item {
-        flex-basis: 100%;
-        margin-bottom: 30px;
-    }
-    .features-title {
-        font-size: 18px;
-        line-height: 28px;
-    }
-    .features-text {
-        font-size: 14px;
-        line-height: 28px;
-    }
-    .project-title {
-        font-size: 18px;
-        line-height: 150%;
-    }
-    .project-time,
-    .project-stack,
-    .project-feedback {
-        flex-basis: 100%;
-        margin-bottom: 33px;
-    }
-    .project-paragraph {
-        font-size: 14px;
-        line-height: 150%;
-    }
-    .contacts-form {
-        padding: 40px 19px;
-    }
-    .form-title {
-        font-size: 15px;
-        line-height: 140%;
-    }
-    .form-button {
-        font-size: 10px;
-        line-height: 28px;
-    }
-    .contacts-phone,
-    .contacts-mail {
-        flex-basis: 100%;
-        margin-bottom: 30px;
-    }
-    .contacts-title {
-        font-size: 18px;
-        line-height: 21px;
-    }
-    .contacts-link {
-        font-size: 14px;
-        line-height: 16px;
-        display: block;
-        margin-bottom: 13px;
-    }
-    .contacts-policy {
-        margin-top: 27px;
-    }
+.section-title {
+    font-size: 19px;
+    line-height: 22px;
+    margin-bottom: 60px;
+}
+.features-item {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+.features-title {
+    font-size: 18px;
+    line-height: 28px;
+}
+.features-text {
+    font-size: 14px;
+    line-height: 28px;
+}
+.project-title {
+    font-size: 18px;
+    line-height: 150%;
+}
+.project-time,
+.project-stack,
+.project-feedback {
+    flex-basis: 100%;
+    margin-bottom: 33px;
+}
+.project-paragraph {
+    font-size: 14px;
+    line-height: 150%;
+}
+.contacts-form {
+    padding: 40px 19px;
+}
+.form-title {
+    font-size: 15px;
+    line-height: 140%;
+}
+.form-button {
+    font-size: 10px;
+    line-height: 28px;
+}
+.contacts-phone,
+.contacts-mail {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+.contacts-title {
+    font-size: 18px;
+    line-height: 21px;
+}
+.contacts-link {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 13px;
+}
+.contacts-policy {
+    margin-top: 27px;
+}
 }

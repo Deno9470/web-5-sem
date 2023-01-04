@@ -20,6 +20,7 @@ window.addEventListener("load", function () {
             if (links[i].getAttribute("href") === "#" + currentElement.id) {
                 links[i].classList.add("active")
             }
+
         }
     }
     window.addEventListener("scroll", activeLink)
